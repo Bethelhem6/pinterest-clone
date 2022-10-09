@@ -8,18 +8,18 @@
           <img src="../assets/logo.png" alt="logo" class="h-6 w-6" />
         </button>
         <button
-          v-for="btn in buttons"
-          :key="btn.key"
-          :class="`${
-            selectedBtn === btn.key
-              ? 'bg-dark text-white'
-              : 'text-dark hover:bg-light'
-          } font-semibold px-4 ml-1 mr-1 py-2 rounded-full`"
+          class="bg-dark text-white font-semibold px-4 ml-1 mr-1 py-2 rounded-full"
         >
-          {{ btn.name }}
+          Home
+        </button>
+        <button
+          class="text-dark hover:bg-light font-semibold px-4 ml-1 mr-1 py-2 rounded-full"
+        >
+          Create
+          <span class="material-icons"> expand_more </span>
         </button>
       </div>
-      <div class="flex-grow ml-4 mr-5">
+      <div class="flex-grow ml-4 mr-3">
         <span class="material-icons absolute mt-3 ml-3 text-muted">search</span>
         <input
           type="text"
@@ -29,14 +29,24 @@
       </div>
       <div class="flex item-center">
         <button
-          class="hover:bg-light flex item-center justify-center p-3 rounded-full"
+          class="hover:bg-light flex item-center justify-center relative p-3 rounded-full"
         >
           <span class="material-icons">notifications</span>
+          <div
+            class="rounded-full text-white text-sm bg-red-500 text-center absolute h-54 ml-5 -mt-2 w-4"
+          >
+            3
+          </div>
         </button>
         <button
           class="hover:bg-light flex item-center justify-center p-3 rounded-full"
         >
           <span class="material-icons">textsms</span>
+          <div
+            class="rounded-full text-white text-sm bg-red-500 text-center absolute h-54 ml-5 -mt-2 w-4"
+          >
+            5
+          </div>
         </button>
         <button
           class="hover:bg-light flex item-center justify-center p-3 rounded-full"
@@ -50,15 +60,10 @@
           class="hover:bg-light flex item-center justify-center p-3 rounded-full"
         >
           <v-expansion-panels>
-            <v-expansion-panel >
-           <v-expansion-header>
-           <span class="material-icons">expand_more</span>
-           </v-expansion-header>
+            <v-expansion-panel>
+              <span class="material-icons">expand_more</span>
               <v-expansion-panel-content>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.
+                Loo laboris
               </v-expansion-panel-content>
             </v-expansion-panel>
           </v-expansion-panels>
